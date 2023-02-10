@@ -20,6 +20,50 @@ Do you remember the Shell? It’s exactly the same but limited to a specific use
 + Update attributes of an object
 + Destroy an object
 ## Notes  
+### Python packages
+
+A Python file can be a module but when this file is in a folder, we call this folder a package.  
+File organization is really important in a big project. This means for Python: packages everywhere.  
+
+from *my_math.abs import my_abs* => YES YES YES! now you can use your function like that: my_abs(89)
+Wait, does this really work?
+
+NO! something is missing: the magic file __init__.py
+
+Indeed, each folder must contain this file to be considered a package.
+
+This file should be empty except if you want to import all the content of modules by using *.
+
+my_script.py
+my_math/
+    __init__.py
+    abs.py
+    functions/
+        __init__.py
+        add.py
+How can I use my function *my_add(a, b)* from the file *add.py* in my_script.py?
+
+    ```python
+    from my_math.functions.add import my_add
+    ```
+Using *import ** is still considered bad practice in production code. In that case, __init__.py shouldn’t be empty but must contain the list of modules to load:  
+
+Relative versus Absolute import
+In this example:
+
+my_script.py
+my_math/
+    __init__.py
+    abs.py
+    positive.py
+positive.py contains one function def is_positive(n) and this function uses my_abs(n). How it’s possible?
+
+By importing: from my_math.abs import my_abs or from abs import my_abs
+
+What the difference?
+
++ *from abs import my_abs* is using a relative path(since both are in same directory) between your file that imports and the module to import
++ from my_math.abs import my_abs is using an absolute path between the file you execute and the module to import
 
 ## Links 
 + Python packages concept page  
