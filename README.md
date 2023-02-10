@@ -22,8 +22,8 @@ Do you remember the Shell? It’s exactly the same but limited to a specific use
 ## Notes  
 
 ## Links 
-+ Python packages concept page 
-https://intranet.alxswe.com/concepts/66  
++ Python packages concept page  
+https://intranet.alxswe.com/concepts/66   
 + How To Use *args and **kwargs in Python 3  
 https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3   
 + cmd module  
