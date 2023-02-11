@@ -14,7 +14,7 @@ class BaseModel:
         self.name = name
         self.id = id
         self.created_at = created_at
-        self.update_at = updated_at
+        self.updated_at = updated_at
 
     def __str__(self):
         print("{} {} {}".format(self.__class__, self.id, self.to_dict))
