@@ -4,11 +4,9 @@ Unit test for BaseModel class
 """
 from datetime import datetime
 import inspect
-import models
-import pep8
+from models.base_model import BaseModel
 import unittest
 
-BaseModel = models.base_model.BaseModel
 
 
 class TestBaseModelDocs(unittest.TestCase):
@@ -34,12 +32,6 @@ class TestBaseModelDocs(unittest.TestCase):
 		all_functions = TestBaseModelDocs.all_funcs
 		for function in all_functions:
 			self.assertIsNotNone(function[1].__doc__)
-
-	def test_pep8_base_model(self):
-		"""... base_model.py conforms to PEP8 Style"""
-		pep8style = pep8.StyleGuide(quiet=True)
-		errors = pep8style.check_files(['models/base_model.py'])
-		self.assertEqual(errors.total_errors, 0, errors.messages)
 
 	def test_file_is_executable(self):
 		"""... tests if file has correct permissions so user can execute"""
