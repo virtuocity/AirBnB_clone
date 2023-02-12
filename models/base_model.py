@@ -7,14 +7,15 @@ from datetime import datetime as date
 class BaseModel:
     """class base model"""
 
-    def __init__(self, my_number=0, name="", id=str(uuid4()),
-                 created_at=date.utcnow(), updated_at=str(date.utcnow())):
+    def __init__(self, my_number=0, name="", __class__="", updated_at=str(date.utcnow()), id=str(uuid4()),
+                 created_at=date.utcnow()):
         self.my_number = my_number
         self.name = name
+        self.__class__ = __class__
+        self.updated_at = updated_at
         self.id = id
         self.created_at = created_at
-        self.updated_at = updated_at
-
+        
     def __str__(self):
         """
             returns informal string representation of object instance
