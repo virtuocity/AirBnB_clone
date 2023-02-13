@@ -11,11 +11,10 @@ class HBNBCommand(cmd.Cmd):
         """
         handles intro to command interpreter
         """
-        print('.----------------------------.')
-        print('|    Welcome to hbnb CLI!    |')
-        print('|   for help, enter \'help\'   |')
-        print('|   To quit, enter \'quit\'   |')
-        print('.----------------------------.')
+        print('Welcome to HBNB Console')
+        print('== == == == == == == == == == == == == == == == == == == ==')
+        print('Commands:')
+        print('EOF  help  quit|')
 
     def postloop(self):
         """
