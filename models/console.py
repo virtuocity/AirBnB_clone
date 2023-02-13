@@ -7,24 +7,6 @@ class HBNBCommand(cmd.Cmd):
     """Cmd class"""
     prompt = '(hbnb) '
 
-    def preloop(self):
-        """
-        handles intro to command interpreter
-        """
-        print('Welcome to HBNB Console')
-        print('== == == == == == == == == == == == == == == == == == == ==')
-        print('Commands:')
-        print('EOF  help  quit|')
-
-    def postloop(self):
-        """
-        handles exit to command interpreter
-        """
-        print('.----------------------------.')
-        print('|  Nagayat!  |')
-        print('.----------------------------.')
-
-
     def do_quit(self, line):
         """quit: quit
         USAGE: Command to quit the program
