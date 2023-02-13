@@ -5,8 +5,8 @@ from datetime import datetime as date
 class BaseModel:
     """class base model"""
 
-    def __init__(self, my_number=0, name="", updated_at=date.utcnow(), id=str(uuid4()),
-                 created_at=date.utcnow()):
+    def __init__(self, my_number=0, name="", updated_at=date.now(),
+                 id=str(uuid4()), created_at=date.now()):
         self.my_number = my_number
         self.name = name
         self.updated_at = updated_at
