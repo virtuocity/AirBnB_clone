@@ -23,6 +23,7 @@ class HBNBCommand(cmd.Cmd):
         Called when an empty line is entered in response to the prompt.
         """
         pass
+    
 
 
 if __name__ == '__main__':
