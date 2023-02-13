@@ -8,8 +8,8 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
 
     def do_quit(self, line):
-        """quit: quit
-        USAGE: Command to quit the program
+        """
+        Quit command to exit the program
         """
         return True
 
@@ -23,7 +23,6 @@ class HBNBCommand(cmd.Cmd):
         Called when an empty line is entered in response to the prompt.
         """
         pass
-    
 
 
 if __name__ == '__main__':
