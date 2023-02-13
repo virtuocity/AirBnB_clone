@@ -42,4 +42,4 @@ class BaseModel:
 
     def save(self):
         """ Update updated at time"""
-        self.updated_at = date.utcnow()
+        self.updated_at = date.now()
