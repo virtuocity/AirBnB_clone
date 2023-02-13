@@ -2,6 +2,8 @@
 """AirBnB clone - the console Base class"""
 from uuid import uuid4
 from datetime import datetime as date
+from models.engine.file_storage import FileStorage
+from models import storage
 
 
 class BaseModel:
@@ -68,3 +70,5 @@ class BaseModel:
     def save(self):
         """ Update updated at time"""
         self.updated_at = date.utcnow()
+        storage.new(self)
+        storage.save()
