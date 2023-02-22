@@ -14,6 +14,32 @@ The first step is to “design” / “sketch” / “prototype” each element:
 During this project, you will learn how to manipulate HTML and CSS languages. HTML is the structure of your page, it should be the first thing to write. CSS is the styling of your page, the design. I really encourage you to fix your HTML part before starting the styling. Indeed, without any structure, you can’t apply any design.
 
 Before starting, please fork or clone the repository AirBnB_clone from your partner if you were not the owner of the previous project.
+## Notes 
+Emails often include HTML content. When you receive a fancy looking e-mail, it is either one big image file or it is an HTML e-mail. You can craft HTML e-mails yourself, but they can be tricky. The HTML viewers in email clients are not standardized, and most of them do not allow <style> tags. For this reason, HTML e-mail often contain lots of inline styles.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tag is very important -->
+    <!-- Define the character set used -->
+    <meta charset="utf-8">
+    <!-- Define keywords for search engines-->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- Define a description of your web page -->
+    <meta name="description" content="Free Web tutorials">
+    <!-- Define the author of a page: -->
+    <meta name="author" content="John Doe">
+    <!-- set viewport  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is a web page.</p>
+  </body>
+</html>
+
+
 ## Links
 + [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)  
 + [Inline Styles in HTML](https://www.codecademy.com/article/html-inline-styles)  
@@ -22,3 +48,4 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 + [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
 + [MozillaDevelopersNetwork?](https://developer.mozilla.org/en-US/)  
 + [CenterBoxes](https://css-tricks.com/centering-css-complete-guide/)  
++ [Requests: HTTP for Humans](https://requests.readthedocs.io/en/latest/index.html)  
