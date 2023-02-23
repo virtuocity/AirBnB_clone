@@ -67,6 +67,41 @@ The <header> element is a structural element that outlines the heading of a segm
 
 The <head> element is not displayed on a page and is used to outline metadata, including the document title, and links to external files. It falls directly within the <html> element.  
 
+To create an email link, the href attribute value needs to start with mailto: followed by the email address to which the email should be sent. To create an email link to shay@awesome.com, for example, the href attribute value would be mailto:shay@awesome.com.
+
+Additionally, subject, body text, and other information for the email may be populated. To add a subject line, we’ll include the subject= parameter after the email address. The first parameter following the email address must begin with a question mark, ?, to bind it to the hyperlink path. Multiple words within a subject line require that spaces be encoded using %20.
+
+Adding body text works in the same way as adding the subject, this time using the body= parameter in the href attribute value. Because we are binding one parameter to another we need to use the ampersand, &, to separate the two. As with the subject, spaces must be encoded using %20, and line breaks must be encoded using %0A.
+
+Altogether, a link to shay@awesome.com with the subject of “Reaching Out” and body text of “How are you” would require an href attribute value of mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you.
+
+Here’s the full breakdown:
+
+```htm
+<a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a><a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>
+```
+### Opening Links in a New Window
+  <a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
+
+### Linking to Parts of the Same Page:
+ A common example of these same-page links are “Back to top” links that return a user to the top of a page.
+
+We can create an on-page link by first setting an id attribute on the element we wish to link to, then using the value of that id attribute within an anchor element’s href attribute.
+
+Using the “Back to top” link as an example, we can place an id attribute value of top on the <body> element. Now we can create an anchor element with an href attribute value of #top, pound sign and all, to link to the beginning of the <body> element.
+
+Our code for this same-page link would look like the following:
+
+
+
+```htm
+<body id="top">
+  ...
+  <a href="#top">Back to top</a>
+  ...
+</body>
+```
+
 ## Links
 + [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)  
 + [Inline Styles in HTML](https://www.codecademy.com/article/html-inline-styles)  
