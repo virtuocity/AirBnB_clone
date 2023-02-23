@@ -81,7 +81,9 @@ Here’s the full breakdown:
 <a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a><a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>
 ```
 ### Opening Links in a New Window
+```htm
   <a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
+```
 
 ### Linking to Parts of the Same Page:
  A common example of these same-page links are “Back to top” links that return a user to the top of a page.
