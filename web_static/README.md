@@ -44,7 +44,28 @@ Semantics within HTML is the practice of giving content on the page meaning and 
   </body>
 </html>
 ```
+Divisions, or <div>s, and <span>s are HTML elements that act as containers solely for styling purposes. As generic containers, they do not come with any overarching meaning or semantic value. Paragraphs are semantic in that content wrapped within a <p> element is known and understood as a paragraph. <div>s and <span>s do not hold any such meaning and are simply containers.
 
+Both <div>s and <span>s, however, are extremely valuable when building a website in that they give us the ability to apply targeted styles to a contained set of content.
+
+A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design. A <span>, on the other hand, is an inline-level element commonly used to identify smaller groupings of text within a block-level element.  
+### Comments
+HTML comments start with <!-- and end with -->. CSS comments start with /* and end with */.  
+
+The <strong> element is semantically used to give strong importance to text, and is thus the most popular option for bolding text. The <b> element, on the other hand, semantically means to stylistically offset text, which isn’t always the best choice for text deserving prominent attention. We have to gauge the significance of the text we wish to set as bold and to choose an element accordingly.  
+
+```htm
+<!-- Strong importance -->
+<p><strong>Caution:</strong> Falling rocks.</p>
+
+<!-- Stylistically offset -->
+<p>This recipe calls for <b>bacon</b> and <b>baconnaise</b>.</p>
+```
+For the longest time the structure of a web page was built using divisions. The problem was that divisions provide no semantic value, and it was fairly difficult to determine the intention of these divisions. Fortunately HTML5 introduced new [structurally based elements](https://dev.opera.com/articles/new-structural-elements-in-html5/), including the <header>, <nav>, <article>, <section>, <aside>, and <footer> elements.
+
+The <header> element is a structural element that outlines the heading of a segment of a page. It falls within the <body> element.
+
+The <head> element is not displayed on a page and is used to outline metadata, including the document title, and links to external files. It falls directly within the <html> element.  
 
 ## Links
 + [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)  
