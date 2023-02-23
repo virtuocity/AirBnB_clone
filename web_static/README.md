@@ -17,6 +17,9 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 ## Notes 
 Emails often include HTML content. When you receive a fancy looking e-mail, it is either one big image file or it is an HTML e-mail. You can craft HTML e-mails yourself, but they can be tricky. The HTML viewers in email clients are not standardized, and most of them do not allow <style> tags. For this reason, HTML e-mail often contain lots of inline styles.
 
+ CSS cascades from top to bottom.  
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,3 +52,6 @@ Emails often include HTML content. When you receive a fancy looking e-mail, it i
 + [MozillaDevelopersNetwork?](https://developer.mozilla.org/en-US/)  
 + [CenterBoxes](https://css-tricks.com/centering-css-complete-guide/)  
 + [Requests: HTTP for Humans](https://requests.readthedocs.io/en/latest/index.html)  
++ [A Dao of Web Design](http://alistapart.com/article/dao/)
++ [CSS Tools: Reset CSS](https://meyerweb.com/eric/tools/css/reset/)  
++ [Semantic code: What? Why? How?](https://boagworld.com/dev/semantic-code-what-why-how/)  
