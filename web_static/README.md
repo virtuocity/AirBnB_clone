@@ -15,6 +15,7 @@ During this project, you will learn how to manipulate HTML and CSS languages. HT
 
 Before starting, please fork or clone the repository AirBnB_clone from your partner if you were not the owner of the previous project.
 ## Notes 
+## HTML
 Emails often include HTML content. When you receive a fancy looking e-mail, it is either one big image file or it is an HTML e-mail. You can craft HTML e-mails yourself, but they can be tricky. The HTML viewers in email clients are not standardized, and most of them do not allow `<style>` tags. For this reason, HTML e-mail often contain lots of inline styles.
 
 CSS cascades from top to bottom.  
@@ -103,7 +104,44 @@ Our code for this same-page link would look like the following:
   ...
 </body>
 ```
+## CSS
+Within CSS, all styles cascade from the top of a style sheet to the bottom, allowing different styles to be added or overwritten as the style sheet progresses.
 
+Every selector in CSS has a specificity weight. A selector’s specificity weight, along with its placement in the cascade, identifies how its styles will be rendered.
+
+The type selector has the lowest specificity weight and holds a point value of 0-0-1. The class selector has a medium specificity weight and holds a point value of 0-1-0. Lastly, the ID selector has a high specificity weight and holds a point value of 1-0-0. As we can see, specificity points are calculated using three columns. The first column counts ID selectors, the second column counts class selectors, and the third column counts type selectors.
+
+What’s important to note here is that the ID selector has a higher specificity weight than the class selector, and the class selector has a higher specificity weight than the type selector.
+
+### Combining Selectors
+For example, say we want to select all paragraph elements that reside within an element with a class attribute value of hotdog and set their background color to brown. However, if one of those paragraphs happens to have the class attribute value of mustard, we want to set its background color to yellow. Our HTML and CSS may look like the following:
+
+HTML
+
+```htm
+<div class="hotdog">
+  <p>...</p>
+  <p>...</p>
+  <p class="mustard">...</p>
+</div>
+```
+
+              
+CSS
+
+```css
+.hotdog p {
+  background: brown;
+}
+.hotdog p.mustard {
+  background: yellow;
+}
+```
+When selectors are combined they should be read from right to left. The selector farthest to the right, directly before the opening curly bracket, is known as the key selector. The key selector identifies exactly which element the styles will be applied to. Any selector to the left of the key selector will serve as a prequalifier.
+
+The first combined selector above, .hotdog p, includes two selectors: a class and a type selector. These two selectors are separated by a single space. The key selector is a type selector targeting paragraph elements. And because this type selector is prequalified with a class selector of hotdog, the full combined selector will only select paragraph elements that reside within an element with a class attribute value of hotdog.
+
+The second selector above, .hotdog p.mustard, includes three selectors: two class selectors and one type selector. The only difference between the second selector and the first selector is the addition of the class selector of mustard to the end of the paragraph type selector. Because the new class selector, mustard, falls all the way to the right of the combined selector, it is the key selector, and all of the individual selectors coming before it are now prequalifiers.
 ## Links
 + [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)  
 + [Inline Styles in HTML](https://www.codecademy.com/article/html-inline-styles)  
