@@ -15,7 +15,7 @@ During this project, you will learn how to manipulate HTML and CSS languages. HT
 
 Before starting, please fork or clone the repository AirBnB_clone from your partner if you were not the owner of the previous project.
 ## Notes 
-Emails often include HTML content. When you receive a fancy looking e-mail, it is either one big image file or it is an HTML e-mail. You can craft HTML e-mails yourself, but they can be tricky. The HTML viewers in email clients are not standardized, and most of them do not allow <style> tags. For this reason, HTML e-mail often contain lots of inline styles.
+Emails often include HTML content. When you receive a fancy looking e-mail, it is either one big image file or it is an HTML e-mail. You can craft HTML e-mails yourself, but they can be tricky. The HTML viewers in email clients are not standardized, and most of them do not allow `<style>` tags. For this reason, HTML e-mail often contain lots of inline styles.
 
 CSS cascades from top to bottom.  
 
@@ -44,15 +44,15 @@ Semantics within HTML is the practice of giving content on the page meaning and 
   </body>
 </html>
 ```
-Divisions, or <div>s, and <span>s are HTML elements that act as containers solely for styling purposes. As generic containers, they do not come with any overarching meaning or semantic value. Paragraphs are semantic in that content wrapped within a <p> element is known and understood as a paragraph. <div>s and <span>s do not hold any such meaning and are simply containers.
+Divisions, or `<div>`s, and `<span>`s are HTML elements that act as containers solely for styling purposes. As generic containers, they do not come with any overarching meaning or semantic value. Paragraphs are semantic in that content wrapped within a `<p>` element is known and understood as a paragraph. `<div>`s and `<span>`s do not hold any such meaning and are simply containers.
 
-Both <div>s and <span>s, however, are extremely valuable when building a website in that they give us the ability to apply targeted styles to a contained set of content.
+Both `<div>`s and `<span>`s, however, are extremely valuable when building a website in that they give us the ability to apply targeted styles to a contained set of content.
 
-A <div> is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design. A <span>, on the other hand, is an inline-level element commonly used to identify smaller groupings of text within a block-level element.  
+A `<div>` is a block-level element that is commonly used to identify large groupings of content, and which helps to build a web page’s layout and design. A `<span>`, on the other hand, is an inline-level element commonly used to identify smaller groupings of text within a block-level element.  
 ### Comments
-HTML comments start with <!-- and end with -->. CSS comments start with /* and end with */.  
+HTML comments start with `<!-- and end with -->`. CSS comments start with `/* and end with */`.  
 
-The <strong> element is semantically used to give strong importance to text, and is thus the most popular option for bolding text. The <b> element, on the other hand, semantically means to stylistically offset text, which isn’t always the best choice for text deserving prominent attention. We have to gauge the significance of the text we wish to set as bold and to choose an element accordingly.  
+The `<strong>` element is semantically used to give strong importance to text, and is thus the most popular option for bolding text. The `<b>` element, on the other hand, semantically means to stylistically offset text, which isn’t always the best choice for text deserving prominent attention. We have to gauge the significance of the text we wish to set as bold and to choose an element accordingly.  
 
 ```htm
 <!-- Strong importance -->
@@ -90,7 +90,7 @@ Here’s the full breakdown:
 
 We can create an on-page link by first setting an id attribute on the element we wish to link to, then using the value of that id attribute within an anchor element’s href attribute.
 
-Using the “Back to top” link as an example, we can place an id attribute value of top on the <body> element. Now we can create an anchor element with an href attribute value of #top, pound sign and all, to link to the beginning of the <body> element.
+Using the “Back to top” link as an example, we can place an id attribute value of top on the `<body>` element. Now we can create an anchor element with an href attribute value of #top, pound sign and all, to link to the beginning of the `<body>` element.
 
 Our code for this same-page link would look like the following:
 
