@@ -17,9 +17,11 @@ Before starting, please fork or clone the repository AirBnB_clone from your part
 ## Notes 
 Emails often include HTML content. When you receive a fancy looking e-mail, it is either one big image file or it is an HTML e-mail. You can craft HTML e-mails yourself, but they can be tricky. The HTML viewers in email clients are not standardized, and most of them do not allow <style> tags. For this reason, HTML e-mail often contain lots of inline styles.
 
- CSS cascades from top to bottom.  
+CSS cascades from top to bottom.  
 
+Semantics within HTML is the practice of giving content on the page meaning and structure by using the proper element. Semantic code describes the value of content on a page, regardless of the style or appearance of that content.  
 
+```htm
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,6 +43,7 @@ Emails often include HTML content. When you receive a fancy looking e-mail, it i
     <p>This is a web page.</p>
   </body>
 </html>
+```
 
 
 ## Links
